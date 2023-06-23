@@ -33,7 +33,7 @@
               "libraryName": "mf-presentation",
               "libraryTarget": "umd"
             },
-            "baseHref": "http://localhost:4200/"
+            "deployUrl": "http://localhost:4100/"
           },
           "configurations": {
             "production": {

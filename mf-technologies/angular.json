@@ -33,7 +33,7 @@
               "libraryName": "mf-technologies",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:4200/"
+            "deployUrl": "http://localhost:4300/"
           },
           "configurations": {
             "production": {
