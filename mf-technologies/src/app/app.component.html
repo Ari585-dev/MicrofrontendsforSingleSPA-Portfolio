@@ -1,5 +1,12 @@
+<div class="container">
+  <button (click)="previousTech()" id="back"><img src="{{leftbuttonURL}}"></button>
 <div class="middle-div">
-  <img class="image" src="https://www.mindinventory.com/blog/wp-content/uploads/2022/11/angular-15-1.webp" 
+  <h1>MIS TECNOLOGÍAS</h1>
+  <img class="image" [src]="tecnos[index].image" 
   alt="Descripción de la imagen">
+  <h2>{{tecnos[index].name}}</h2>
+  
  
+</div>
+<button (click)="nextTech()" id="next"><img src="{{rightbuttonURL}}"></button>
 </div>
