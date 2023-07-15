@@ -1,93 +1,108 @@
-
 .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-div,
+.left-div {
+  flex-basis: calc(48% - 5px);
+  max-width: calc(48% - 5px);
+  height: 350px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(10, 5, 47, 0.714);
+}
+
+.left-div {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  /* Para ocultar el exceso de contenido que se salga del triángulo */
+
+}
+
+.left-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 400px 100vw;
+  /* Ajusta el valor de 400px según la altura del div */
+  border-color: transparent transparent rgb(5, 100, 129) transparent;
+}
+
+.presentation {
+  position: relative;
+  /* Se puede utilizar position: absolute para un mejor control del posicionamiento */
+
+}
+
+.presentation p {
+  position: relative;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #ccc;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+.right-div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: rgb(0, 0, 0);
+
+}
+
+
+.contact {
+  width: 100%;
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  color: #ccc;
+  text-align: left;
+  border: 8px inset rgb(5, 100, 129);
+
+}
+
+.contact ul {
+  margin-bottom: 18px;
+  padding: 0 auto;
+  /* Se puede establecer un padding de 0 en lugar del valor predeterminado */
+  display: block;
+  /* Se utiliza flexbox para alinear los íconos de contacto */
+
+}
+
+.contact img {
+  margin-right: 50px;
+  width: 100px;
+  height: 55px;
+}
+
+
+/* Estilos adicionales para hacer el contenido responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  
-  .right-div {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    height: 350px;
-    margin: 0 auto;
-    padding: 10px;
-    background-image: url('https://img.freepik.com/free-vector/background-luxury-gradient-design-template_483537-1634.jpg?size=626&ext=jpg&uid=R108830166&ga=GA1.2.1068912731.1688504774&semt=ais');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(10, 5, 47, 0.714);
-  }
-  
+
+  .right-div,
   .left-div {
-    position: relative;
-    width: 100%;
-    max-width: 700px;
-    height: 350px;
-    margin: 0 auto;
-    background-image: url('https://img.freepik.com/free-vector/rectangle-frame-gray-background-vector_53876-170860.jpg?size=626&ext=jpg&uid=R108830166&ga=GA1.2.1068912731.1688504774&semt=ais');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(10, 5, 47, 0.714);
-    /* overflow: auto; */
+    flex-basis: 100%;
+    max-width: 100%;
   }
 
-  .presentation {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .presentation p {
-    margin-bottom: 0.1px;
-    font-family: "Arial Rounded MT Bold", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color:#ccc;
-    text-align:center;
-  }
-
-  .contact{
-    font-family: "Arial Rounded MT Bold", sans-serif;
-    font-weight: bold;
-    font-size: 19px;
-    color:#ccc;
-    text-align:right;
-
-  }
-  
-  .contact .linkedin{
-    width: 50px;
-    height: 50px;
-    padding-right: 150px;
-
-  }
-  .contact .git{
-    width: 50px;
-    height: 50px;
-    padding-right: 166px;
-
-  }
-
-  .contact .gmail {
-    width: 70px;
-    height: 50px;
-    padding-right: 165px;
-  }
-
-  .contact .uni {
-    width: 50px;
-    height: 50px;
-    padding-right: 95px;
-  }
-  
-  .contact ul{
-    margin-bottom: 30px;
-  }
-  
+  /* .presentation p {
+    font-size: 10px;
+    text-align: center;
+  } */
+}
