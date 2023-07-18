@@ -1,6 +1,9 @@
 .container {
+  width: 100%;
+  min-width: 500px;
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(45deg, #060316, #1a133a, #19066d);
 }
 
 .right-div,
@@ -8,7 +11,7 @@
   flex-basis: calc(48% - 5px);
   max-width: calc(48% - 5px);
   height: 350px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -32,8 +35,7 @@
   height: 0;
   border-style: solid;
   border-width: 0 0 400px 100vw;
-  /* Ajusta el valor de 400px según la altura del div */
-  border-color: transparent transparent rgb(5, 100, 129) transparent;
+  border-color: transparent rgba(17, 32, 165, 0.719) transparent;
 }
 
 .presentation {
@@ -69,7 +71,7 @@
   font-size: 23px;
   color: #ccc;
   text-align: left;
-  border: 8px inset rgb(5, 100, 129);
+  border: 8px outset rgba(17, 32, 165, 0.719);
 
 }
 
@@ -92,17 +94,14 @@
 /* Estilos adicionales para hacer el contenido responsive */
 @media screen and (max-width: 768px) {
   .container {
+    flex-basis: 100%;
     flex-direction: column;
+    max-width: 100%;
   }
 
   .right-div,
   .left-div {
     flex-basis: 100%;
-    max-width: 100%;
+    max-width: 200%;
   }
-
-  /* .presentation p {
-    font-size: 10px;
-    text-align: center;
-  } */
 }
