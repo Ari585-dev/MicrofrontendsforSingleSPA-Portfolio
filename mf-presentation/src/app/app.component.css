@@ -1,5 +1,6 @@
 .container {
-  width: 100%;
+  width: 60rem;
+  margin: 0 auto;
   min-width: 500px;
   display: flex;
   justify-content: space-between;
@@ -94,14 +95,17 @@
 /* Estilos adicionales para hacer el contenido responsive */
 @media screen and (max-width: 768px) {
   .container {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     flex-direction: column;
-    max-width: 100%;
+    min-width: 100%;
   }
 
   .right-div,
   .left-div {
-    flex-basis: 100%;
-    max-width: 200%;
+    margin: 0 auto;
+    /* flex-basis: 100%; */
+    min-width: 80%;
   }
+
+ 
 }

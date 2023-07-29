@@ -1,6 +1,8 @@
 
 
 .container {
+    width: 60rem;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,26 +80,29 @@
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        max-width: 60rem;
+        flex-direction:column;
         align-items: stretch;
+
     }
 
     .middle-div {
-        width: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        /* margin-bottom: 20px; */
     }
 
     .image {
+        margin: 0 auto;
         max-width: 80%;
-        height: 80%;
+        height: 70%;
     }
 
     .container #next,
     #back {
         
         margin-left: 45%;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 }
 
