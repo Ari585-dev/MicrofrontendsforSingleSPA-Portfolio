@@ -20,7 +20,19 @@
     border-radius: 10px;
     background-color: black;
     box-shadow: 5px 5px 5px rgba(10, 5, 47, 0.714);
+    overflow-y: scroll;
 }
+
+.left li {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-weight: bold;
+    color: #ccc;
+    text-align:left;
+    margin-bottom: 50px;
+    list-style-type:upper-roman;
+    border: 8px double #ccc;
+}
+
 
 .right {
     display: flex;
