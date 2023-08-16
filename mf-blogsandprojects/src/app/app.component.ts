@@ -13,8 +13,8 @@ export class AppComponent {
   proys= [
     {id:1 ,name:"PaymentReminder" , src:"" },
     {id:2 ,name:"CommonHttpProtocols-with-ASPdotNetCore" , src:"" },
-    {id:3 ,name:"Scraping" , src:"" },
-    {id:4 ,name:"NodeJS-GamesCRUD" , src:"" },
+    {id:3 ,name:"Scraping" , src:"https://user-images.githubusercontent.com/129306585/259843125-cde8e559-e415-4daf-8fac-b51ec01f9ff2.gif" },
+    {id:4 ,name:"NodeJS-GamesCRUD" , src:"https://user-images.githubusercontent.com/129306585/259836670-57aa41c2-96a3-45fb-8f92-4466ea749564.gif" },
     {id:5 ,name:"SingleSPA-Portfolio " , src: "" },
     
   ];
